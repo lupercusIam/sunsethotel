@@ -1,0 +1,30 @@
+#dev:
+#  propel:
+#    param:
+#      classname:  DebugPDO
+
+#test:
+#  propel:
+#    param:
+#      classname:  DebugPDO
+
+#all:
+#  propel:
+#    class:        sfPropelDatabase
+#   param:
+#    classname:  PropelPDO
+#   dsn:        mysql:dbname=PhpProject2;host=localhost
+#  username:   root
+#      password:   
+#      encoding:   utf8
+#      persistent: true
+#      pooling:    true
+
+
+all:
+  doctrine:
+    class:        sfDoctrineDatabase
+    param:
+      dsn:        mysql:dbname=sunsethotel;host=localhost
+      username:   root
+      password:   
